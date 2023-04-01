@@ -31,7 +31,7 @@ public class HW4 {
         //Тут я вывожу положительные числа
         int number =0;
         for (int i = 0; i < array.length; i++) {
-            if (array[i] > 0) {
+            if (array[i] > 0 && (array[i]%2 ==0 )) {
                 //Решил добавить номер кажлого положительного числа
                 number = number+1;
                 System.out.println("Положительное число #"+ number+ ": " + array[i]);
