@@ -1,10 +1,10 @@
-package HW4;
+package Lesson4HW3;
 
 import java.util.Arrays;
 import java.util.Random;
 import java.util.stream.IntStream;
 
-public class HW4 {
+public class Lesson4HW3 {
     public static void main(String[] args) {
         //Тут я нашёл рандомайзер для массива, чтобы самому вручную не вводить нагуглил
         int size = 20;
