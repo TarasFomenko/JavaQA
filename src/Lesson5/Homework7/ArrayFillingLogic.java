@@ -1,14 +1,18 @@
 package Lesson5.Homework7;
 
-import java.util.Arrays;
-
 public class ArrayFillingLogic {
 
+    public static int[] arrayPopulation(int [] array,int value) {
+        array[0] = value;
+        return array;
+    }
 
-
-    public static void arrayOnlyValue(int [] myArray, int value) {
-        myArray[0] = value;
-        System.out.println(Arrays.toString(myArray));
+    public static int[] arrayPopulation(int[] array, int value, int position) {
+        for (int i = array.length-1; i > position; i--) {
+            array[i]=array[i-1];
+        }
+        array[position] = value;
+        return array;
     }
 }
 

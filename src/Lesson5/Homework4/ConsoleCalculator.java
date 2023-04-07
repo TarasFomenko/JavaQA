@@ -11,6 +11,7 @@ public class ConsoleCalculator {
         int number2 = 0;
         String operation = "";
 
+        //Тут я добавил проверки чтобы если мы ввели не инт, программа заканчивалась
         System.out.println("Введите число 1");
         if (scanner.hasNextInt()) {
             number1 = scanner.nextInt();
@@ -19,6 +20,7 @@ public class ConsoleCalculator {
             System.exit(0);
         }
 
+        //Тоже проверки
         System.out.println("Введите число 2");
         if (scanner.hasNextInt()) {
             number2 = scanner.nextInt();
@@ -27,6 +29,7 @@ public class ConsoleCalculator {
             System.exit(0);
         }
 
+        // Тут если у нас есть ноль в 1ом или 2ом числе, то заканчиваем программу
         System.out.println("Введите операцию");
         if (scanner.hasNext("/") && number1 == 0 || number2 == 0) {
             System.out.println("Деление нуля или на ноль невозможно");
@@ -51,6 +54,7 @@ public class ConsoleCalculator {
             case "%":
                 System.out.println(CalculatorLogic.modulo(number1, number2));
                 break;
+            //Проверяю на неправильный знак
             default:
                 System.out.println("Знак введён неправильно");
         }
