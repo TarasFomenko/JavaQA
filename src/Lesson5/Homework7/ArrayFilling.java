@@ -6,7 +6,7 @@ import java.util.Scanner;
 import java.util.stream.IntStream;
 
 public class ArrayFilling {
-    private static void main(String[] args) {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         //Делаю рандомный массив, чтобы интереснее было
