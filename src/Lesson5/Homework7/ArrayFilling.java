@@ -42,8 +42,8 @@ public class ArrayFilling {
             ArrayFillingLogic.arrayPopulation(array, value);
             System.out.println("Меняем первый символ массива на " + (array[0]) + "\nВесь массив: " + Arrays.toString(array));
         } else {
-            ArrayFillingLogic.arrayPopulation(array, value, position);
-            System.out.println("Ставим ввёдённое значение на место №: " + (position + 1) + "\nПолученный массив: " + Arrays.toString(array));
+            int [] newArray = ArrayFillingLogic.arrayPopulation(array, value, position);
+            System.out.println("Ставим ввёдённое значение на место №: " + (position + 1) + "\nПолученный массив: " + Arrays.toString(newArray));
         }
     }
 }
