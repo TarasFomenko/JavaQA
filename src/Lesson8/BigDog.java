@@ -17,7 +17,7 @@ public class BigDog extends Dog{
     }
 
     void greets (BigDog bigDog){
-        System.out.println("Wooooooooooooooof!");
+        System.out.println("I'm a big dog and I say Wooooooooooooooof!");
     }
 
 
