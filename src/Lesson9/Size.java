@@ -2,9 +2,9 @@ package Lesson9;
 
 public enum Size {
     Small("S", 11, 41),
-    Medium ("M", 12, 42),
-    Large ("L", 13, 43),
-    ExtraLarge ("XL", 14, 44);
+    Medium("M", 12, 42),
+    Large("L", 13, 43),
+    ExtraLarge("XL", 14, 44);
 
     private final String shortName;
     private final int width;
@@ -30,9 +30,7 @@ public enum Size {
 
     @Override
     public String toString() {
-        System.out.println(getShortName() + " size, with width = " + getWidth() +  " and length = " + getLength());
+        System.out.println(getShortName() + " size, with width = " + getWidth() + " and length = " + getLength());
         return null;
     }
-
-
 }

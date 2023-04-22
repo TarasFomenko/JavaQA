@@ -6,6 +6,5 @@ public class Main {
         Size.Medium.toString();
         Size.Large.toString();
         Size.ExtraLarge.toString();
-
     }
 }
