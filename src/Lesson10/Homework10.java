@@ -7,7 +7,7 @@ public class Homework10 {
     public static void main(String[] args) {
         String groceries = "bread, meat, water, water, potato, tea, meat, rice, sugar, rice";
         System.out.println("Изначально введённая строка: " + groceries);
-        System.out.println("----------------------------");
+        System.out.println("------------------------------");
         divideString(groceries);
     }
     public static void divideString(String sentList) {
