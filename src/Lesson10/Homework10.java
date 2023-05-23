@@ -10,6 +10,7 @@ public class Homework10 {
         System.out.println("------------------------------");
         divideString(groceries);
     }
+
     public static void divideString(String sentList) {
         String[] regularArray = sentList.replace(",", "").replace(".", "").split(" ");
         Set<String> linkedHashSet = new LinkedHashSet<>(Arrays.asList(regularArray));
@@ -19,6 +20,13 @@ public class Homework10 {
             regularArray[i] = regularArray[i].substring(0, 1).toUpperCase() + regularArray[i].substring(1);
             System.out.println(regularArray[i]);
         }
+        /**
+         Как сделать без обычного массива. Запись получается короче
+         */
+//        Set<String> linkedHashSet = new LinkedHashSet<>(Arrays.asList(sentList.replace(",", "").replace(".", "").split(" ")));
+//        for (String l:linkedHashSet){
+//            System.out.println(l.substring(0, 1).toUpperCase() + l.substring(1));
+//        }
     }
 }
 
